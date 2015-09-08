@@ -18,6 +18,7 @@
 ##
 ## Use automake to process this into a Makefile.in
 
+AM_CFLAGS = @EXPAT_CFLAGS@
 lib_LTLIBRARIES = liblistgroups.la
 dist_liblistgroups_la_SOURCES = listgroups.c listgroups.h
 

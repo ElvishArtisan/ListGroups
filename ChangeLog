@@ -1,0 +1,4 @@
+2015-09-08 Fred Gleason <fredg@paravelsystems.com>
+	* Implemented 'RD_ListGroups()' function in 'lib/listgroups.c' and
+	'lib/lisitgroups.h'.
+	* Incremented the package version to 0.0.1.

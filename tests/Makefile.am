@@ -18,12 +18,12 @@
 ##
 ## Use automake to process this into a Makefile.in
 
-AM_CPPFLAGS = -Wall -I$(top_srcdir)/lib
+AM_CPPFLAGS = -Wall -I$(top_srcdir)/lib @EXPAT_CFLAGS@
 LIBS = -L$(top_srcdir)/lib
 noinst_PROGRAMS = listgroups_test
 
 dist_listgroups_test_SOURCES = listgroups_test.c listgroups_test.h
-listgroups_test_LDADD = -lcurl -llistgroups
+listgroups_test_LDADD = -lcurl -llistgroups @EXPAT_LIBS@
 
 CLEANFILES = *~\
              moc_*

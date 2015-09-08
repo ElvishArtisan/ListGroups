@@ -66,6 +66,11 @@ AC_SUBST(DISTRO,$ar_gcc_distro)
 #
 AC_CHECK_HEADER(curl/curl.h,[],[AC_MSG_ERROR([*** LibCurl not found ***])])
 
+#
+# Check for Expat
+#
+PKG_CHECK_MODULES(EXPAT,expat,[],[AC_MSG_ERROR([*** Expat not found ***])])
+
 AC_CONFIG_FILES([ \
     lib/Makefile \
     tests/Makefile \
